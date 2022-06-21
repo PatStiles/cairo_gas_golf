@@ -1,0 +1,278 @@
+[
+    {
+        "members": [
+            {
+                "name": "id",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "value",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "KeyValue",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "inputs": [],
+        "name": "get_num",
+        "outputs": [
+            {
+                "name": "val",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "num",
+                "type": "felt"
+            }
+        ],
+        "name": "set_num",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_i",
+                "type": "felt"
+            },
+            {
+                "name": "_num",
+                "type": "felt"
+            }
+        ],
+        "name": "get_elementArrayMap",
+        "outputs": [
+            {
+                "name": "num",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_i",
+                "type": "felt"
+            },
+            {
+                "name": "_num",
+                "type": "felt"
+            }
+        ],
+        "name": "set_elementArrayMap",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_a",
+                "type": "felt"
+            },
+            {
+                "name": "_b",
+                "type": "felt"
+            }
+        ],
+        "name": "get_elementCompoundKey",
+        "outputs": [
+            {
+                "name": "num",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_a",
+                "type": "felt"
+            },
+            {
+                "name": "_b",
+                "type": "felt"
+            },
+            {
+                "name": "_num",
+                "type": "felt"
+            }
+        ],
+        "name": "set_elementCompoundKey",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_array_len",
+                "type": "felt"
+            },
+            {
+                "name": "_array",
+                "type": "felt*"
+            },
+            {
+                "name": "_i",
+                "type": "felt"
+            }
+        ],
+        "name": "get_elementArray",
+        "outputs": [
+            {
+                "name": "num",
+                "type": "felt"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_array_len",
+                "type": "felt"
+            },
+            {
+                "name": "_array",
+                "type": "felt*"
+            },
+            {
+                "name": "_i",
+                "type": "felt"
+            },
+            {
+                "name": "_num",
+                "type": "felt"
+            }
+        ],
+        "name": "set_elementArray",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "get_KeyValue",
+        "outputs": [
+            {
+                "name": "keyValue",
+                "type": "KeyValue"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_id",
+                "type": "felt"
+            },
+            {
+                "name": "_value",
+                "type": "felt"
+            }
+        ],
+        "name": "set_KeyValue",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_key_value_array_len",
+                "type": "felt"
+            },
+            {
+                "name": "_key_value_array",
+                "type": "KeyValue*"
+            },
+            {
+                "name": "_i",
+                "type": "felt"
+            }
+        ],
+        "name": "get_ArrayKeyValue",
+        "outputs": [
+            {
+                "name": "keyValue",
+                "type": "KeyValue"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_key_value_array_len",
+                "type": "felt"
+            },
+            {
+                "name": "_key_value_array",
+                "type": "KeyValue*"
+            },
+            {
+                "name": "_i",
+                "type": "felt"
+            },
+            {
+                "name": "_id",
+                "type": "felt"
+            },
+            {
+                "name": "_value",
+                "type": "felt"
+            }
+        ],
+        "name": "set_ArrayKeyValue",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_array_len",
+                "type": "felt"
+            },
+            {
+                "name": "_array",
+                "type": "felt*"
+            },
+            {
+                "name": "_size",
+                "type": "felt"
+            },
+            {
+                "name": "_key",
+                "type": "felt"
+            }
+        ],
+        "name": "get_find_element",
+        "outputs": [
+            {
+                "name": "element_len",
+                "type": "felt"
+            },
+            {
+                "name": "element",
+                "type": "felt*"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
